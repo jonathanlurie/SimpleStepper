@@ -29,13 +29,13 @@ Here is how to start with it:
  1. install it as a regular Arduino library
 
  2. In your Arduino sketch, include SimpleStepper
-```
+```cpp
  #include "SimpleStepper.fr"
 ```
 
  3. Initialize some values before constructing an object:
 
-```
+```cpp
  // the pin for direction
  const int motorDirPin = 5;
 
@@ -53,7 +53,7 @@ Here is how to start with it:
 
  4. Construct your SimpleStepper object and initialize it:
 
-```
+```cpp
  // Construct, using the values defined previously
  SimpleStepper m_motor(motorDirPin, motorStepPin);
 
@@ -75,7 +75,8 @@ m_motor.setRPM(speedRP);
 5. Let's spin it!
 
 You have several way of spinning:
-```
+
+```cpp
 // spin with an angle in degree.
 // It will use the speed defined above (if possible), use:
 void rotationDegrees(float nbDegrees);
@@ -98,7 +99,8 @@ composed of 8 micro steps.
 
 Micro steps can be used independently but the heigh of them are not equal in
 term of degrees. Anyway, you can use those ones:
-```
+
+```cpp
 // performs half a step (4 micro steps)
 void renegateHalfStep();
 
@@ -110,6 +112,6 @@ If you think (or know) your stepper motor does not count 8 micro steps for
 one step, you can go to the top of the file SimpleStepper.h and edit
 the following line:
 
-```
+```cpp
 #define _MICROSTEP_ 8
 ```

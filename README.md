@@ -72,7 +72,7 @@ m_motor.setRPM(speedRP);
 
 5. Let's spin it!
 
-You have several way of spining:
+You have several way of spinning:
 
 // spin with an angle in degree.
 // It will use the speed defined above (if possible), use:
@@ -94,7 +94,7 @@ Other modes are possible for an independant movement, but they are less precise
 than renegateStep(). They are based on the fact that a renegateStep is actually
 composed of 8 micro steps.
 
-Micro steps can be used independantly but the heigh of them are not equal in
+Micro steps can be used independently but the heigh of them are not equal in
 term of degrees. Anyway, you can use those ones:
 
 // performs half a step (4 micro steps)

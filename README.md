@@ -26,14 +26,14 @@ Arduino board. Il was tested with the EasyDriver from Sparkfun.
 
 
 Here is how to start with it:
- 1. install it as a regular Arduino library
+1. install it as a regular Arduino library
 
- 2. In your Arduino sketch, include SimpleStepper
+2. In your Arduino sketch, include SimpleStepper
 ```cpp
  #include "SimpleStepper.fr"
 ```
 
- 3. Initialize some values before constructing an object:
+3. Initialize some values before constructing an object:
 
 ```cpp
  // the pin for direction
@@ -51,7 +51,7 @@ Here is how to start with it:
  const float speedRP = 0.25;
 ```
 
- 4. Construct your SimpleStepper object and initialize it:
+4. Construct your SimpleStepper object and initialize it:
 
 ```cpp
  // Construct, using the values defined previously

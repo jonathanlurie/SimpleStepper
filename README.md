@@ -26,14 +26,15 @@ Arduino board. Il was tested with the EasyDriver from Sparkfun.
 
 
 Here is how to start with it:
-1. install it as a regular Arduino library
+<ol>
+<li>install it as a regular Arduino library</li>
 
-2. In your Arduino sketch, include SimpleStepper
+<li>In your Arduino sketch, include SimpleStepper</li>
 ```cpp
  #include "SimpleStepper.fr"
 ```
 
-3. Initialize some values before constructing an object:
+<li>Initialize some values before constructing an object:</li>
 
 ```cpp
  // the pin for direction
@@ -51,7 +52,7 @@ Here is how to start with it:
  const float speedRP = 0.25;
 ```
 
-4. Construct your SimpleStepper object and initialize it:
+<li>Construct your SimpleStepper object and initialize it:</li>
 
 ```cpp
  // Construct, using the values defined previously
@@ -72,7 +73,7 @@ m_motor.setTotalNbSteps(totalNbStep360);
 m_motor.setRPM(speedRP);
 ```
 
-5. Let's spin it!
+<li>Let's spin it!</li>
 
 You have several way of spinning:
 
@@ -91,7 +92,7 @@ void rotationSteps(long int nbSteps);
 void renegateStep();
 ```
 
-6. A bit further, for experts
+<li>A bit further, for experts</li>
 
 Other modes are possible for an independant movement, but they are less precise
 than renegateStep(). They are based on the fact that a renegateStep is actually
@@ -115,3 +116,5 @@ the following line:
 ```cpp
 #define _MICROSTEP_ 8
 ```
+
+</ol>

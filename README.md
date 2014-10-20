@@ -35,7 +35,7 @@ Here is how to start with it:
 
  3. Initialize some values before constructing an object:
 
-'''
+```
  // the pin for direction
  const int motorDirPin = 5;
 
@@ -49,7 +49,7 @@ Here is how to start with it:
  // define the speed of rotation in RPM
  // note: this is not mandatory when performing solo steps
  const float speedRP = 0.25;
-'''
+```
 
  4. Construct your SimpleStepper object and initialize it:
 

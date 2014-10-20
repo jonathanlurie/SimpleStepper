@@ -26,9 +26,9 @@ Arduino board. Il was tested with the EasyDriver from Sparkfun.
 
 
 Here is how to start with it:
-1- install it as a regular Arduino library
+**1- install it as a regular Arduino library**
 
-2- In your Arduino sketch, include SimpleStepper
+**2- In your Arduino sketch, include SimpleStepper**
 ```cpp
  #include "SimpleStepper.fr"
 ```

@@ -31,7 +31,7 @@ Here is how to start with it:
 
 **2- In your Arduino sketch, include SimpleStepper**
 ```cpp
- #include "SimpleStepper.fr"
+ #include "SimpleStepper.h"
 ```
 
 **3- Initialize some values before constructing an object:**
